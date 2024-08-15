@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Contact Me</h1>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <form action="mailto:rabyn900@gmail.com?subject=HI" method="post" enctype="text/plain">
+      
+      <p>
+        <label for="username">Username</label>
+        <input type="username" name="username" id="username" placeholder="Enter your name" required>
+      </p>
+      
+      <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="example@gmail.com">
+      </p>
+
+      <h3>Gender</h3>
+      <p>
+        <label for="male">Male</label>
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" value="female" id="female" name="gender">  
+      </p>
+    <h3>Select Your Hobbies</h3>
+    <p>
+      <label for="ride">Riding</label>
+      <input type="checkbox" value="ride" id="ride" name="hobbies">
+      <label for="Basketball">Basketball</label>
+      <input type="checkbox" value="basketball" id="basketball" name="hobbies">  
+    </p>
+    <p>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Australia">Australia</option>
+        <optgroup label="Dev">
+          <option value="Nepal">Nepal</option>
+          <option value="Amrica">Amrica</option>
+          <option value="Iceland">IcelandK</option>
+          <option value="Germany">Germany</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <textarea name="message" id="message" cols="30" rows="10" maxlength="100" placeholder="Message Us"></textarea>
+    </p>
+
+    <!-- For Date -->
+      <p> 
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+      </p>   
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </fieldset>
+</body>
+</html>
